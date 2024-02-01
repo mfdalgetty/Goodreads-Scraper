@@ -6,7 +6,7 @@ Avid readers face the challenge of deciding what books to read, and novice reade
 
 ## How it Works
 
-* The Python script reads in a ❎book_club_books.xlsx file are retrieves the book titles from it.
+* The Python script reads in a ❎book_club_books.xlsx file and retrieves the book titles.
 * The Selenium driver opens 📖goodreads.com and searches for the book title.
   * The HTML for each book's landing page is scraped and stored in an 📂html_files folder.
 * The BeatifulSoup parser finds the 📃reviews in the html files.
