@@ -18,7 +18,6 @@ options.add_experimental_option('detach', True)
 # Reading in Excel sheet
 
 data = pd.read_excel('book_club_books.xlsx').drop(index=0)
-data.rename(columns = {'Wishlist': 'Title', 'Unnamed: 1': 'Author'}, inplace=True)
 books = data['Title'].tolist()
 
 # Create a folder to store html files
