@@ -8,13 +8,13 @@ Avid readers face the challenge of deciding what books to read, and novice reade
 
 * The Python script reads in a ❎book_club_books.xlsx file and retrieves the book titles.
 * The Selenium driver opens 📖goodreads.com and searches for the book title.
-  * The HTML for each book's landing page is scraped and stored in an 📂html_files folder.
-* The BeatifulSoup parser finds the 📃reviews in the html files.
-  * The reviews are stored as spreadsheets in the 📂reviews folder.
+* The HTML for each book's landing page is scraped.
+* The BeatifulSoup parser finds the 📃reviews in the HTML.
+* The reviews are stored as spreadsheets in the 📂reviews folder.
 
 ```mermaid
 flowchart TD
-    A[Book List] -->|Selenium Scraper| B[HTML Files]
+    A[Book List] -->|Selenium Scraper| B(HTML Files)
     B --> |Beatiful Soup Parser| C[Reviews]
 ```
 
