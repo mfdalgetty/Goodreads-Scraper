@@ -9,7 +9,7 @@ Avid readers face the challenge of deciding what books to read, and novice reade
 ```mermaid
 flowchart TD
     A[Book List] -->|Selenium Scraper| B(HTML Files)
-    B --> |Beatiful Soup Parser| C[Reviews]
+    B --> |Beautiful Soup Parser| C[Reviews]
 ```
 
 ### Input
@@ -21,7 +21,7 @@ flowchart TD
 * The Python script reads in a ❎book_club_books.xlsx file and retrieves the book titles.
 * The Selenium driver opens 📖goodreads.com and searches for the book title.
 * The HTML for each book's landing page is scraped.
-* The BeatifulSoup parser finds the 📃reviews in the HTML.
+* The BeautifulSoup parser finds the 📃reviews in the HTML.
 * The reviews are stored as spreadsheets in the 📂reviews folder.  
 
 ### Output
