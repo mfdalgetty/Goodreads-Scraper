@@ -6,17 +6,27 @@ Avid readers face the challenge of deciding what books to read, and novice reade
 
 ## How it Works
 
-* The Python script reads in a ❎book_club_books.xlsx file and retrieves the book titles.
-* The Selenium driver opens 📖goodreads.com and searches for the book title.
-* The HTML for each book's landing page is scraped.
-* The BeatifulSoup parser finds the 📃reviews in the HTML.
-* The reviews are stored as spreadsheets in the 📂reviews folder.
-
 ```mermaid
 flowchart TD
     A[Book List] -->|Selenium Scraper| B(HTML Files)
     B --> |Beatiful Soup Parser| C[Reviews]
 ```
+
+### Input
+
+![Screenshot of book club list spreadsheet](https://github.com/mfdalgetty/Goodreads-Scraper/blob/main/Screenshots/Book%20Club%20Books.png)
+
+
+
+* The Python script reads in a ❎book_club_books.xlsx file and retrieves the book titles.
+* The Selenium driver opens 📖goodreads.com and searches for the book title.
+* The HTML for each book's landing page is scraped.
+* The BeatifulSoup parser finds the 📃reviews in the HTML.
+* The reviews are stored as spreadsheets in the 📂reviews folder.  
+
+### Output
+
+![Screenshot of a reviews spreadsheet](https://github.com/mfdalgetty/Goodreads-Scraper/blob/main/Screenshots/Reviews.png)
 
 ## Setup
 
@@ -52,5 +62,5 @@ https://www.linkedin.com/in/matt-dalgetty-493a05166/
 ## Acknowledgments
 
 This project was inspired by 
-* [Natassha Selvaraj's excellent blog](https://www.natasshaselvaraj.com/web-scraping/)
+* [Natassha Selvaraj's blog](https://www.natasshaselvaraj.com/web-scraping/)
 * [The PyCoach's Selenium tutorial](https://www.youtube.com/watch?v=UOsRrxMKJYk&t=1155s)
